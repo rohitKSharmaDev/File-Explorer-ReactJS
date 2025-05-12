@@ -67,7 +67,7 @@ const Folder = ({ explorerData, handleInsertNode }) => {
 
           {
             explorerData.items.map((exp) => (
-              <Folder explorerData={exp} key={exp.id} />
+              <Folder explorerData={exp} key={exp.id} handleInsertNode={handleInsertNode} />
             ))
           }
         </div>
